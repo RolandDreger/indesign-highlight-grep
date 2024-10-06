@@ -12,7 +12,7 @@ Locked layers and objects are not searched.
 
 At running the script a new condition (Conditional Text) is created. It's called `::Highlight_GREP::`. The script applied them to GREP expressions matches. After completion of the script, the condition is normally removed.
 
-If, for whatever reason, the condition is still existing after using the script, you could open the Conditional Text panel (Window > Type and Tables > Conditional Text) and delete it.
+If, for whatever reason, the condition is still existing after using the script, you could open the Conditional Text panel (Window → Type and Tables → Conditional Text) and delete it.
 
 ## Project Octopus
 
