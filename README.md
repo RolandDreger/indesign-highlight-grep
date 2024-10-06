@@ -2,6 +2,8 @@
 
 Script for searching text and testing GREP expressions in Adobe InDesign. The matches are highlighted in the document.
 
+<img width="1920" alt="highlight-grep" src="https://github.com/user-attachments/assets/946b6e50-fc5d-44bc-9dcc-79ab3fc30978">
+
 ## Please notice
 
 Locked layers and objects are not searched.
