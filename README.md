@@ -1,4 +1,4 @@
-﻿# Set Up Baseline Grid
+﻿# Highlight GREP
 
 Script for searching text and testing GREP expressions in Adobe InDesign. The matches are highlighted in the document.
 
