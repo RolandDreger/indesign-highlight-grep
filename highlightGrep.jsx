@@ -828,7 +828,7 @@ function __getWildcardsForFind() {
 	var _item;
 
 	// Wildcards Dialog for Search
-	var _selectWildcardsForFind = new Window ("dialog","Sonderzeichen für Suche");
+	var _selectWildcardsForFind = new Window ("dialog",localize({"de":"Sonderzeichen für Suche","en":"Wildcards for Search"}));
 	with (_selectWildcardsForFind) {
 	  alignChildren = "right";
 
@@ -844,7 +844,7 @@ function __getWildcardsForFind() {
 			_item.grep = "\\r";
 		 
 		 // Symbole
-		 var _symbols = add ("node", "Symbole");
+		 var _symbols = add ("node",localize({"de":"Symbole","en":"Symbols"}));
 		 with (_symbols) {
 			_item = add("item",localize({"de":"Leerzeichen (über die Schriftart definiert): [ ]","en":"Space (Defined by the font): [ ]"}));
 			_item.grep = "[ ]";
@@ -881,7 +881,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Marken
-		 var _marks = add ("node","Marken");
+		 var _marks = add ("node",localize({"de":"Marken","en":"Marks"}));
 		 with (_marks) {
 			_item = add("item",localize({"de":"Alle Seitenzahlen: ~#","en":"Any Page Number: ~#"}));
 			_item.grep = "~#";
@@ -904,7 +904,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Trenn- und Gedankenstriche
-		 var _dashes = add ("node","Trenn- und Gedankenstriche");
+		 var _dashes = add ("node",localize({"de":"Trenn- und Gedankenstriche","en":"Hyphens and Dashes"}));
 		 with (_dashes) {
 			_item = add("item",localize({"de":"Geviertstrich: ~_","en":"Em Dash: ~_"}));
 			_item.grep = "~_";
@@ -919,7 +919,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Leerraum
-		 var _spaces = add ("node","Leerraum");
+		 var _spaces = add ("node",localize({"de":"Leerraum","en":"Spaces"}));
 		 with (_spaces) {
 			_item = add("item",localize({"de":"Geviert: ~m","en":"Em Space: ~m"}));
 			_item.grep = "~m";
@@ -948,7 +948,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Anführungszeichen
-		 var _puntuation = add ("node","Anführungszeichen");
+		 var _puntuation = add ("node",localize({"de":"Anführungszeichen","en":"Quotation Marks"}));
 		 with (_puntuation) {
 			_item = add("item",localize({"de":"Alle doppelten Anführungszeichen: \"","en":"Any Double Quotation Mark: \""}));
 			_item.grep = "\"";
@@ -969,7 +969,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Umbruchzeichen
-		 var _breaks = add ("node","Umbruchzeichen");
+		 var _breaks = add ("node",localize({"de":"Umbruchzeichen","en":"Break Characters"}));
 		 with (_breaks) {
 			_item = add("item",localize({"de":"Alle Umbruchzeichen (außer harter Zeilenumbruch): \\r","en":"All Break Character (except Forced Line Break): \\r"}));
 			_item.grep = "\\r";
@@ -990,7 +990,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Variable
-		 var _variables = add ("node","Variable");
+		 var _variables = add ("node",localize({"de":"Variable","en":"Variables"}));
 		 with (_variables) {
 			_item = add("item",localize({"de":"Alle Variablen: ~v","en":"Any Variable: ~v"}));
 			_item.grep = "~v";
@@ -1027,7 +1027,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Andere 
-		 var _others = add ("node","Andere");
+		 var _others = add ("node",localize({"de":"Andere","en":"Other"}));
 		 with (_others) {
 			_item = add("item",localize({"de":"Tabulator für rechte Ausrichtung: ~y","en":"Right Indent Tab: ~y"}));
 			_item.grep = "~y";
@@ -1040,7 +1040,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Platzhalter
-		 var _placeholders = add ("node","Platzhalter");
+		 var _placeholders = add ("node",localize({"de":"Platzhalter","en":"Placeholder"}));
 		 with (_placeholders) {
 			_item = add("item",localize({"de":"Beliebige Ziffer: \\d","en":"Any Digit: \\d"}));
 			_item.grep = "\\d";
@@ -1077,7 +1077,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Eigene Zeichenklasse
-		 var _characterClass = add ("node","Eigene Zeichenklasse");
+		 var _characterClass = add ("node",localize({"de":"Eigene Zeichenklasse","en":"Own Character Set"}));
 		 with (_characterClass) {
 			_item = add("item",localize({"de":"Alle Zeichen innerhalb der eckigen Klammer: []","en":"Character Set: []"}));
 			_item.grep = "[]";
@@ -1086,7 +1086,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Unicode
-		 var _unicode = add ("node","Unicode");
+		 var _unicode = add ("node",localize({"de":"Unicode","en":"Unicode"}));
 		 with (_unicode) {
 			_item = add("item",localize({"de":"Unicode-Codepoint: \\x{####}","en":"Unicode-Codepoint: \\x{####}"}));
 			_item.grep = "\\x{####}";
@@ -1097,7 +1097,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Positionen
-		 var _position = add ("node","Positionen");
+		 var _position = add ("node",localize({"de":"Positionen","en":"Locations"}));
 		 with (_position) {
 			_item = add("item",localize({"de":"Absatzbeginn: ^","en":"Beginning of paragraph: ^"}));
 			_item.grep = "^";
@@ -1118,7 +1118,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Wiederholung
-		 var _repeatings = add ("node","Wiederholung");
+		 var _repeatings = add ("node",localize({"de":"Wiederholung","en":"Repetitions"}));
 		 with (_repeatings) {
 			_item = add("item",localize({"de":"Null oder ein Mal: ?","en":"Zero or One Time: ?"}));
 			_item.grep = "?";
@@ -1143,7 +1143,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Entsprechung
-		 var _equivalents = add ("node","Entsprechung");
+		 var _equivalents = add ("node",localize({"de":"Entsprechung","en":"Matches"}));
 		 with (_equivalents) {
 			_item = add("item",localize({"de":"Markierter Unterausdruck: ()","en":"Marking Subexpression: ()"}));
 			_item.grep = "()";
@@ -1168,7 +1168,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Modifizierer
-		 var _modifier = add ("node","Modifizierer");
+		 var _modifier = add ("node",localize({"de":"Modifizierer","en":"Modifiers"}));
 		 with (_modifier) {
 			_item = add("item",localize({"de":"Nicht zwischen Groß- und Kleinschreibung unterscheiden: (?i)","en":"Case-insensitive Off: (?i)"}));
 			_item.grep = "(?i)";
@@ -1193,7 +1193,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Posix-Ausdrücke
-		 var _posix = add ("node","Posix-Ausdrücke");
+		 var _posix = add ("node",localize({"de":"Posix-Ausdrücke","en":"POSIX"}));
 		 with (_posix) {
 			_item = add("item",localize({"de":"Buchstaben und Zahlen: [[:alnum:]]","en":"Any alphanumeric character: [[:alnum:]]"}));
 			_item.grep = "[[:alnum:]]";
@@ -1222,7 +1222,7 @@ function __getWildcardsForFind() {
 		 }
 
 		 // Unicode-Properties
-		 var _unicodeProps = add ("node","Unicode-Properties");
+		 var _unicodeProps = add ("node",localize({"de":"Unicode-Properties","en":"Unicode Properties"}));
 		 with (_unicodeProps) { 
 			_item = add("item",localize({"de":"letter (Alle Buchstaben): \\p{L*}","en":"letter: \\p{L*}"}));
 			_item.grep = "\\p{L*}";
@@ -1281,8 +1281,8 @@ function __getWildcardsForFind() {
 	
 	  var _buttonGroup = add ("group");
 	  with (_buttonGroup) {
-		 var _close = add ("button", undefined, "Schließen", {name: "cancel"});
-		 var _insert = add ("button", undefined, "Einfügen", {name: "ok"});     
+		 var _close = add ("button", undefined, localize({"de":"Schließen","en":"Close"}), {name: "cancel"});
+		 var _insert = add ("button", undefined, localize({"de":"Einfügen","en":"Insert"}), {name: "ok"});     
 	  }
 	} /* END dialog _selectWildcardsForFind */
 	
@@ -1302,7 +1302,7 @@ function __getWildcardsForChange() {
 	var _item;
 	
 	// Wildcards Dialog for Change
-	var _selectWildcardsForChange = new Window ("dialog","Sonderzeichen für Ersetzung");
+	var _selectWildcardsForChange = new Window ("dialog",localize({"de":"Sonderzeichen für Ersetzung","en":"Wildcards for Change"}));
 	with (_selectWildcardsForChange) {
 	  alignChildren = "right";
 	  var _wildcardsForChangeTree = add ("treeview");
@@ -1318,7 +1318,7 @@ function __getWildcardsForChange() {
 		_item.grep = "\\r";
 
 		 // Symbole
-		 var _symbols = add ("node", "Symbole");
+		 var _symbols = add ("node",localize({"de":"Symbole","en":"Symbols"}));
 		 with (_symbols) {
 			_item = add("item",localize({"de":"Aufzählungszeichen: ~8","en":"Bullet Character: ~8"}));
 			_item.grep = "~8";
@@ -1339,7 +1339,7 @@ function __getWildcardsForChange() {
 		 } 
 
 		 // Marken
-		 var _marks = add ("node","Marken");
+		 var _marks = add ("node",localize({"de":"Marken","en":"Marks"}));
 		 with (_marks) {
 			_item = add("item",localize({"de":"Aktuelle Seitenzahl: ~N","en":"Current Page Number: ~N"}));
 			_item.grep = "~N";
@@ -1352,7 +1352,7 @@ function __getWildcardsForChange() {
 		 }
 
 		 // Trenn- und Gedankenstriche
-		 var _dashes = add ("node","Trenn- und Gedankenstriche");
+		 var _dashes = add ("node",localize({"de":"Trenn- und Gedankenstriche","en":"Hyphens and Dashes"}));
 		 with (_dashes) {
 			_item = add("item",localize({"de":"Geviertstrich: ~_","en":"Em Dash: ~_"}));
 			_item.grep = "~_";
@@ -1367,7 +1367,7 @@ function __getWildcardsForChange() {
 		 }
 
 		 // Leerraum
-		 var _spaces = add ("node","Leerraum");
+		 var _spaces = add ("node",localize({"de":"Leerraum","en":"Spaces"}));
 		 with (_spaces) {
 			_item = add("item",localize({"de":"Geviert: ~m","en":"Em Space: ~m"}));
 			_item.grep = "~m";
@@ -1396,7 +1396,7 @@ function __getWildcardsForChange() {
 		 }
 
 		 // Anführungszeichen
-		 var _puntuation = add ("node","Anführungszeichen");
+		 var _puntuation = add ("node",localize({"de":"Anführungszeichen","en":"Quotation Marks"}));
 		 with (_puntuation) {
 			_item = add("item",localize({"de":"Gerades doppeltes Anführungszeichen: ~\"","en":"Double Quotation Mark: ~\""}));
 			_item.grep = "~\"";
@@ -1413,7 +1413,7 @@ function __getWildcardsForChange() {
 		 }
 
 		 // Umbruchzeichen
-		 var _breaks = add ("node","Umbruchzeichen");
+		 var _breaks = add ("node",localize({"de":"Umbruchzeichen","en":"Break Characters"}));
 		 with (_breaks) {
 			_item = add("item",localize({"de":"Standardzeilenumbruch: ~b","en":"Standard carriage return: ~b"}));
 			_item.grep = "~b";
@@ -1432,7 +1432,7 @@ function __getWildcardsForChange() {
 		 }
 
 		 // Andere
-		 var _others = add ("node","Andere");
+		 var _others = add ("node",localize({"de":"Andere","en":"Other"}));
 		 with (_others) { 
 			_item = add("item",localize({"de":"Tabulator für rechte Ausrichtung: ~y","en":"Right Indent Tab: ~y"}));
 			_item.grep = "~y";
@@ -1449,7 +1449,7 @@ function __getWildcardsForChange() {
 		 }
 
 		 // Gefunden
-		 var _searchResults = add ("node","Gefunden");
+		 var _searchResults = add ("node",localize({"de":"Gefunden","en":"Found"}));
 		 with (_searchResults) {
 			_item = add("item",localize({"de":"Text gefunden: $0","en":"Found Text: $0"}));
 			_item.grep = "$0";
@@ -1476,8 +1476,8 @@ function __getWildcardsForChange() {
 	
 	  var _buttonGroup = add ("group");
 	  with (_buttonGroup) {
-		 var _close = add ("button", undefined, "Schließen", {name: "cancel"});
-		 var _insert = add ("button", undefined, "Einfügen", {name: "ok"});     
+		 var _close = add ("button", undefined, localize({"de":"Schließen","en":"Close"}), {name: "cancel"});
+		 var _insert = add ("button", undefined, localize({"de":"Einfügen","en":"Insert"}), {name: "ok"});     
 	  }
 	} /* END dialog _selectWildcardsForChange */
 	
